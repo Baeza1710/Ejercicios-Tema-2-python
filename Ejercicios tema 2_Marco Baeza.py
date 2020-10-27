@@ -58,6 +58,13 @@ gpalabras = re.findall(g,txt)
 for gacumulador in gpalabras:
     print(gacumulador)
 
+print("-------buscar telefonos-----------")
+te= r"[0-9]{1,3}\s[0-9]{1,3}\s[0-9]{1,4}"
+
+tepalabras = re.findall(te,txt)
+
+for teacumulador in tepalabras:
+    print(teacumulador)
 
 print("-------CORREOS ELECTRONICOS-----------")
 e= r"\w+[\@]+\w+[.]+\w+"
